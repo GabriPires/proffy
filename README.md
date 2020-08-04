@@ -15,10 +15,6 @@
   <a href="#fire-contribua">
     Contribua
   </a>
-  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#team">
-    Equipe
-  </a>
 </p>
 
 <p align="center">
@@ -29,13 +25,15 @@
 
 ## :camera: Capturas de Tela
 <p align="center">
-	Em breve 😅
-    <!-- <image src=".github/screenshots1.png"> -->
+    <image src="https://i.imgur.com/WF2d4xz.png">
+    <image src="https://i.imgur.com/37dIKt9.png?1">
 </p>
 
 ## :computer: Tecnologías Utilizadas
 
 - [ReactJS](https://reactjs.org/)
+- [Node.Js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
 
 ## :fire: Contribua
 
@@ -44,11 +42,9 @@ Caso o projeto ainda não tenha um nome, por que não começar ajudando a dar um
 
 ## 🔎 Descrição do Projeto
 
-<p align="center">
-	Em breve 😅
-    <!-- <image src=".github/screenshots1.png"> -->
+<p>
+	Proffy é uma plataforma de estudos, onde conectamos estudantes e professores com as mais variadas formações. Professores podem divulgar seu horário e conhecimentos disponíveis, para que alunos possam buscar e entrar em contato para começar a estudar.
 </p>
 
 ---
-
 Feito com :heart: pelo [Champs](https://gtihub.com/GabriPires)
