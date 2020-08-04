@@ -25,8 +25,8 @@
 
 ## :camera: Capturas de Tela
 <p align="center">
-    <image src="https://i.imgur.com/WF2d4xz.png">
-    <image src="https://i.imgur.com/37dIKt9.png?1">
+    <image src="https://i.imgur.com/WF2d4xz.png" width="500">
+    <image src="https://i.imgur.com/37dIKt9.png?1" width="500">
 </p>
 
 ## :computer: Tecnologías Utilizadas
