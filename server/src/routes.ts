@@ -1,9 +1,27 @@
 import express from 'express';
+import db from './database/connection';
 
 const routes = express.Router();
 
-routes.get('/users', (request, response) => {
-  return response.json({ message: "Hello stranger" })
+routes.post('/classes', async (request, response) => {
+  const {
+    name,
+    avatar,
+    whatsapp,
+    bio,
+    cost,
+    subject,
+    schedule
+  } = request.body;
+
+  await db('users').insert({
+    name,
+    avatar,
+    whatsapp,
+    bio
+  })
+
+  return response.send();
 });
 
 export default routes;
