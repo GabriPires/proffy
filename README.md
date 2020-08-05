@@ -2,7 +2,9 @@
 
 
 # Proffy
-![Logo Proffy](https://i.imgur.com/DhNE6Oy.png)
+  <p align="center">
+   <img src="https://i.imgur.com/DhNE6Oy.png" alt="Proffy" />
+  </p>
   <p align="center">
   <a href="#computer-tecnologias-utilizadas">
     Tecnologias usadas
