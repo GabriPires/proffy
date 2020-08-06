@@ -1,12 +1,19 @@
 import React from 'react';
 import { View, ImageBackground, Text } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
 
 import giveClassesBgImage from '../../assets/images/give-classes-background.png'
 
 import styles from './styles';
 
 const GiveClasses: React.FC = () => {
+  const { goBack } = useNavigation();
+
+  function handleNavigateBack() {
+    goBack();
+  }
+
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -20,7 +27,7 @@ const GiveClasses: React.FC = () => {
         </Text>
       </ImageBackground>
 
-      <RectButton style={styles.okButton}>
+      <RectButton style={styles.okButton} onPress={handleNavigateBack}>
         <Text style={styles.okButtonText}>
           Tudo bem
         </Text>
