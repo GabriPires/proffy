@@ -7,7 +7,11 @@ import logoImg from '../../assets/images/logo.png'
 
 import styles from './styles';
 
-const PageHeader: React.FC = () => {
+interface PageHeaderProps {
+  title: string;
+}
+
+const PageHeader: React.FC<PageHeaderProps> = ({ title }) => {
   function handleGoBack() {
 
   }
@@ -23,7 +27,7 @@ const PageHeader: React.FC = () => {
       </View>
 
       <Text style={styles.title}>
-        Proffys disponíveis
+        {title}
       </Text>
     </View>
   );
