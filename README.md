@@ -28,13 +28,16 @@
 ## :camera: Capturas de Tela
 <p align="center">
     <image src="https://i.imgur.com/WF2d4xz.png" width="500">
-    <image src="https://i.imgur.com/37dIKt9.png?1" width="500">
+    <image src="https://i.imgur.com/vHrNovg.jpg" width="500">
+    <image src="https://i.imgur.com/URpZck4.jpg" width="500">
 </p>
 
 ## :computer: Tecnologías Utilizadas
 
 - [ReactJS](https://reactjs.org/)
+- [ReactNative](https://reactnative.dev/)
 - [Node.Js](https://nodejs.org/en/)
+- [Expo](https://expo.io/learn)
 - [Yarn](https://yarnpkg.com/)
 
 ## :fire: Contribua
