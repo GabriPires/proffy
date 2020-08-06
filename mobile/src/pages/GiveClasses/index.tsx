@@ -1,10 +1,17 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, ImageBackground } from 'react-native';
 
-// import { Container } from './styles';
+import giveClassesBgImage from '../../assets/images/give-classes-background.png'
+
+import styles from './styles';
 
 const GiveClasses: React.FC = () => {
-  return <View />;
+  return (
+    <View style={styles.container}>
+      <ImageBackground resizeMode="contain" source={giveClassesBgImage} style={styles.content} >
+        
+      </ImageBackground>
+    </View>);
 }
 
 export default GiveClasses;
