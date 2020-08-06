@@ -29,7 +29,7 @@
 <p align="center">
     <image src="https://i.imgur.com/WF2d4xz.png" width="500">
     <image src="https://i.imgur.com/vHrNovg.jpg" width="500">
-    <image src="https://i.imgur.com/URpZck4.jpg" width="500">
+    <image src="https://i.imgur.com/URpZck4.jpg" width="250">
 </p>
 
 ## :computer: Tecnologías Utilizadas
