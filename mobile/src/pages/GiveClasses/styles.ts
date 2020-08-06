@@ -28,7 +28,22 @@ const styles = StyleSheet.create({
     lineHeight: 26,
     fontFamily: 'Poppins_400Regular',
     maxWidth: 240
-  }
+  },
+
+  okButton: {
+    marginVertical: 40,
+    backgroundColor: '#04d361',
+    height: 58,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 8
+  },
+
+  okButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontFamily: 'Archivo_700Bold',
+  },
 })
 
 export default styles;

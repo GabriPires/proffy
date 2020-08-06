@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, ImageBackground, Text } from 'react-native';
+import { RectButton } from 'react-native-gesture-handler';
 
 import giveClassesBgImage from '../../assets/images/give-classes-background.png'
 
@@ -18,6 +19,12 @@ const GiveClasses: React.FC = () => {
           Para começar, você precisa se cadastrar como professor na nossa plataforma web.
         </Text>
       </ImageBackground>
+
+      <RectButton style={styles.okButton}>
+        <Text style={styles.okButtonText}>
+          Tudo bem
+        </Text>
+      </RectButton>
     </View>);
 }
 
