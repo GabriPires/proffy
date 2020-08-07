@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, ScrollView, Text, TextInput } from 'react-native';
 import { BorderlessButton, RectButton } from 'react-native-gesture-handler';
-import { Feather } from '@expo/vector-icons'
+import { Feather } from '@expo/vector-icons';
+import AsyncStorage from '@react-native-community/async-storage';
 
 import PageHeader from '../../components/PageHeader';
 import TeacherItem, { Teacher } from '../../components/TeacherItem';
@@ -12,11 +13,20 @@ import styles from './styles';
 
 const TeacherList: React.FC = () => {
   const [teachers, setTeachers] = useState([]);
+  const [favorites, setFavorites] = useState([]);
   const [isFiltersVisible, setIsFiltersVisible] = useState(false);
 
   const [subject, setSubject] = useState('');
   const [week_day, setWeekDay] = useState('');
   const [time, setTime] = useState('');
+
+  useEffect(() => {
+    AsyncStorage.getItem('favorites').then(response => {
+      if(response) {
+        setFavorites(JSON.parse(response));
+      }
+    })
+  }, [])
 
 
   function heandleToggleFiltersVisible() {
