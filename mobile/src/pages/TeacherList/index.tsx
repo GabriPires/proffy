@@ -4,7 +4,7 @@ import { BorderlessButton, RectButton } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons'
 
 import PageHeader from '../../components/PageHeader';
-import TeacherItem from '../../components/TeacherItem';
+import TeacherItem, { Teacher } from '../../components/TeacherItem';
 
 import api from '../../services/api';
 
@@ -33,7 +33,7 @@ const TeacherList: React.FC = () => {
     });
 
     setTeachers(response.data);
-    console.log(response.data);
+    setIsFiltersVisible(false);
   }
 
   return ( 
@@ -95,10 +95,9 @@ const TeacherList: React.FC = () => {
           paddingBottom: 16,
         }}
       >
-        <TeacherItem />
-        <TeacherItem />
-        <TeacherItem />
-        <TeacherItem />
+        { teachers.map((teacher: Teacher)=> {
+          return <TeacherItem key={teacher.id} teacher={teacher} />
+        }) }
       </ScrollView>
     </View>
   );
