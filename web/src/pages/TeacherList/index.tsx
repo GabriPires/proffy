@@ -22,7 +22,7 @@ const TeacherList: React.FC = () => {
 
     const response = await api.get('/classes', {
       params: {
-        subject,
+      subject,
       week_day,
       time
       }
