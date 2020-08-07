@@ -17,6 +17,10 @@ const TeacherItem: React.FC = () => {
           <Text style={styles.subject}>Artes</Text>
         </View>
       </View>
+
+      <Text style={styles.bio}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quia veritatis sequi magni corporis sunt eos saepe impedit aliquam reprehenderit facere at odio cumque placeat voluptatibus, ab molestiae asperiores exercitationem?
+      </Text>
     </View>
   );
 }
